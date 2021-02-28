@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import {Link, Route } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import axios from 'axios'
-import SingleBeer from './SingleBeer'
 
 
 class ListBeers extends Component {
