@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link, Route} from 'react-router-dom'
+import {Link, Route } from 'react-router-dom'
 import axios from 'axios'
 import ListBeersDetails from './ListBeersDetails'
 
