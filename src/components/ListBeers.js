@@ -20,7 +20,8 @@ class ListBeers extends Component {
                     beers: response.data,
                     image_url: response.data,
                     tagline: response.data,
-                    contributed_by: response.data
+                    contributed_by: response.data,
+                    name: response.data
                 })
             })
             .catch(() => {
@@ -34,7 +35,7 @@ class ListBeers extends Component {
     render() {
 
         //destructure here
-        const {beers, image_url, tagline, contributed_by} = this.state
+        const {beers, name, image_url, tagline, contributed_by} = this.state
 
         return (
             <div>   
@@ -53,8 +54,6 @@ class ListBeers extends Component {
                             </Link>
                             <p>{beer.tagline}</p>
                             <p>Created by: {beer.contributed_by}</p>
-                            
-                            <Route exact path="beers/:beerId" component={SingleBeer}/>
 
                         </div>
                     })
