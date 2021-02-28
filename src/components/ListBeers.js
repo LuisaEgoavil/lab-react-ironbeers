@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link, Route } from 'react-router-dom'
 import axios from 'axios'
-import ListBeersDetails from './ListBeersDetails'
+import SingleBeer from './SingleBeer'
 
 
 class ListBeers extends Component {
@@ -54,7 +54,7 @@ class ListBeers extends Component {
                             <p>{beer.tagline}</p>
                             <p>Created by: {beer.contributed_by}</p>
                             
-                            <Route exact path="beers/:beerId" component={ListBeersDetails}/>
+                            <Route exact path="beers/:beerId" component={SingleBeer}/>
 
                         </div>
                     })
