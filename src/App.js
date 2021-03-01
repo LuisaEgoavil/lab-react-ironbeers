@@ -31,13 +31,13 @@ class App extends Component {
   handleSubmit = (event) => {
     event.preventDefault()
     //when putting ".value" I'll get "cannot read value of undefined, without it i get "Converting circular structure to JSON" " 
-    let name=event.target.name
-    let tagline=event.target.tagline
-    let description=event.target.description
-    let first_brewed=event.target.first_brewed
-    let brewed_tips=event.target.brewed_tips
-    let attenuation_level=event.target.attenuation_level
-    let contributed_by=event.target.contributed_by
+    let name=event.target.name.value
+    let tagline=event.target.tagline.value
+    let description=event.target.description.value
+    let first_brewed=event.target.first_brewed.value
+    let brewed_tips=event.target.brewed_tips.value
+    let attenuation_level=event.target.attenuation_level.value
+    let contributed_by=event.target.contributed_by.value
 
   
 
